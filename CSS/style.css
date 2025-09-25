@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --Gold-500: hsl(31, 77%, 52%);
+    --Cyan-800: hsl(184, 100%, 22%);
+    --Green-950: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+
+    --font-padrão: 'Lexend Deca', sans-serif;
+    --Weights-padrão: 400;
+
+    --font-destaque: 'Big Shoulders', sans-serif;
+    --Weights-destaque: 700;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: var(--font-padrão);
+    font-weight: var(--Weights-padrão);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+main{
+    width: 90vw;
+}
+
+section{
+    color: var(--Transparent-white-paragraphs);
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0rem 5rem;
+}
+
+.sedans{
+    background-color: var(--Gold-500);
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.suvs{
+    background-color: var(--Cyan-800);
+}
+
+.luxury{
+    background-color: var(--Green-950);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.button-sedans{
+    border: none;
+    border-radius: 3rem;
+    height: 4.5rem;
+    width: 15rem;
+    color: var(--Gold-500);
+}
+
+.button-sedans:hover{
+    background-color: var(--Gold-500);
+    color: var(--Transparent-white-paragraphs);
+    border: .2rem solid var(--Transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.button-suvs{
+    border: none;
+    border-radius: 3rem;
+    height: 4.5rem;
+    width: 15rem;
+    color: var(--Cyan-800);
+}
+
+.button-suvs:hover{
+    background-color: var(--Cyan-800);
+    color: var(--Transparent-white-paragraphs);
+    border: .2rem solid var(--Transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.button-luxury{
+    border: none;
+    border-radius: 3rem;
+    height: 4.5rem;
+    width: 15rem;
+    color: var(--Green-950);
+}
+
+.button-luxury:hover{
+    background-color: var(--Green-950);
+    color: var(--Transparent-white-paragraphs);
+    border: .2rem solid var(--Transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+h1{
+    font-family: var(--font-destaque);
+    font-size: 3rem;
+    font-weight: var(--Weights-destaque);
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 300;
+}

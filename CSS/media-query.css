@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 425px){
+    main{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    main{
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    section{
+        height: 55vh;
+    }
+
+    .sedans{
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+
+    .luxury{
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+
+    h1{
+        margin-top: -2rem;
+    }
+
+    section p{
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    main{
+        width: 60vw;
+    }
+
+    h1{
+        margin-top: -2rem;
+    }
+
+    section p{
+        margin-top: -4rem;
+    }
+}
